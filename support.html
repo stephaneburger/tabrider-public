@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabRider — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: #1c1c1e;
+    background: #fff;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { color: #6b6b70; margin-top: 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  a { color: #0a6cff; }
+  .q { font-weight: 600; margin-top: 1.5rem; margin-bottom: .25rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ea; background: #131315; }
+    .meta { color: #9a9aa0; }
+    a { color: #5aa9ff; }
+  }
+</style>
+</head>
+<body>
+
+<h1>TabRider Support</h1>
+<p class="meta">Questions, problems, or feedback — email
+<a href="mailto:burger.stephane@gmail.com">burger.stephane@gmail.com</a>.</p>
+
+<h2>What TabRider does</h2>
+
+<p>TabRider listens to your guitar through your device&rsquo;s microphone and follows along
+with the score, note by note. Play an exercise and it tells you which notes you hit, how
+close to the beat you were, and how well you held them.</p>
+
+<h2>Common questions</h2>
+
+<p class="q">The app isn&rsquo;t hearing my guitar.</p>
+<ul>
+  <li>Check that TabRider has microphone permission: iOS <strong>Settings → Privacy &amp;
+      Security → Microphone</strong>.</li>
+  <li>Play acoustically, close to the device, in a quiet room. Detection listens for the
+      harmonics of a plucked string, so backing music or conversation nearby will confuse it.</li>
+  <li>Make sure your guitar is in tune — use the built-in Tuner. Detection assumes
+      <strong>standard tuning</strong> (E A D G B E). Pieces written for drop-D or other
+      tunings will not score correctly.</li>
+</ul>
+
+<p class="q">Notes are marked as missed even though I played them.</p>
+<ul>
+  <li>Tune up first — a string that is noticeably flat reads as a different note.</li>
+  <li>Try <strong>Practice</strong> mode and slow the tempo to 75 % or 50 %, which gives
+      each note more room to be recognised.</li>
+  <li><strong>Note by note</strong> mode waits for you on every note instead of moving on
+      without you.</li>
+</ul>
+
+<p class="q">Which files can I import into My Library?</p>
+<p>Guitar Pro 6 files only — the <code>.gpx</code> format. Older Guitar Pro files
+(<code>.gp3</code>, <code>.gp4</code>, <code>.gp5</code>) and Guitar Pro 7 files
+(<code>.gp</code>) are not supported; open them in Guitar Pro and export as
+<code>.gpx</code> first.</p>
+
+<p>Built-in exercises are checked before they ship. Your own files are read as-is, so a file
+using unusual notation may show wrong bar lengths, drift against the metronome, or fail to
+open. That is a limit of the import, not a problem with your file.</p>
+
+<p class="q">Why is an exercise locked?</p>
+<p>Within a level, the first row of exercises is always open and later rows unlock as you
+collect stars — 5, then 15, then 30. If you would rather go straight to a piece, turn on
+<strong>Settings → Unlock all content</strong>. Your stars and scores are unaffected either
+way.</p>
+
+<p class="q">How is my score calculated?</p>
+<p>Each graded run scores three things: whether you played the right note, how close to the
+beat you played it, and how well you sustained it. 60 % earns one star, 75 % two, and 90 %
+three. Practice runs are never scored or saved.</p>
+
+<p class="q">Did I lose my progress?</p>
+<p>The exercise catalogue is still growing, and exercises can be added, changed or removed
+in an update — when that happens, scores attached to affected exercises may be lost. Files
+you imported yourself are not affected.</p>
+
+<h2>Privacy</h2>
+
+<p>TabRider collects no personal data and never records or transmits audio. See the
+<a href="privacy.html">privacy policy</a>.</p>
+
+<h2>Contact</h2>
+
+<p>Email <a href="mailto:burger.stephane@gmail.com">burger.stephane@gmail.com</a>. Please
+mention your device and iOS version, and the exercise you were playing if something went
+wrong there.</p>
+
+</body>
+</html>
