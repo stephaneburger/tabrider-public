@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabRider — 支持</title>
+<link rel="alternate" hreflang="en" href="https://stephaneburger.github.io/tabrider-public/support.html">
+<link rel="alternate" hreflang="fr" href="https://stephaneburger.github.io/tabrider-public/fr/support.html">
+<link rel="alternate" hreflang="es" href="https://stephaneburger.github.io/tabrider-public/es/support.html">
+<link rel="alternate" hreflang="de" href="https://stephaneburger.github.io/tabrider-public/de/support.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://stephaneburger.github.io/tabrider-public/zh-Hans/support.html">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Noto Sans SC", Helvetica, Arial, sans-serif;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1.25rem 1.25rem 4rem;
+    color: #1c1c1e;
+    background: #fff;
+  }
+  nav { font-size: .9rem; color: #6b6b70; margin-bottom: 1.5rem; }
+  nav a, nav strong { margin-right: .75rem; white-space: nowrap; }
+  nav strong { color: inherit; font-weight: 600; }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .meta { color: #6b6b70; margin-top: 0; }
+  .note { color: #6b6b70; font-size: .9rem; margin-top: 2.5rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  a { color: #0a6cff; }
+  .q { font-weight: 600; margin-top: 1.5rem; margin-bottom: .25rem; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ea; background: #131315; }
+    .meta, nav, .note { color: #9a9aa0; }
+    a { color: #5aa9ff; }
+  }
+</style>
+</head>
+<body>
+
+<nav><a href="../support.html" hreflang="en">English</a> <a href="../fr/support.html" hreflang="fr">Français</a> <a href="../es/support.html" hreflang="es">Español</a> <a href="../de/support.html" hreflang="de">Deutsch</a> <strong>简体中文</strong></nav>
+
+<h1>TabRider 支持</h1>
+<p class="meta">如有问题、故障或建议，请发邮件至 <a href="mailto:burger.stephane@gmail.com">burger.stephane@gmail.com</a>。</p>
+
+<h2>TabRider 能做什么</h2>
+<p>TabRider 通过设备的麦克风聆听你的吉他，并逐音跟随乐谱。弹奏一个练习，它会告诉你弹对了哪些音、离节拍有多近，以及每个音保持得如何。</p>
+
+<h2>常见问题</h2>
+
+<p class="q">应用听不到我的吉他。</p>
+<ul>
+  <li>检查 TabRider 是否有麦克风权限。iPhone 和 iPad：<strong>设置 → 隐私与安全性 → 麦克风</strong>。Android：<strong>设置 → 应用 → TabRider → 权限 → 麦克风</strong>。</li>
+  <li>请在安静的房间里用原声弹奏，并靠近设备。检测依靠拨弦产生的泛音，附近的背景音乐或说话声会干扰检测。</li>
+  <li>确保吉他已调准——使用内置的<strong>调音器</strong>。检测默认使用<strong>标准调弦</strong>（E A D G B E）。用 Drop D 或其他调弦写成的曲子无法正确评分。</li>
+</ul>
+
+<p class="q">我明明弹了，音符却被标为错过。</p>
+<ul>
+  <li>先调音——明显偏低的琴弦会被识别成另一个音。</li>
+  <li>试试<strong>练习模式</strong>，并把速度降到 75% 或 50%，让每个音有更多时间被识别。</li>
+  <li><strong>逐音</strong>模式会在每个音上等你，而不是不等你就继续。</li>
+</ul>
+
+<p class="q">我可以把哪些文件导入“我的曲库”？</p>
+<p>仅支持 Guitar Pro 6 文件，即 <code>.gpx</code> 格式。较早的 Guitar Pro 文件（<code>.gp3</code>、<code>.gp4</code>、<code>.gp5</code>）和 Guitar Pro 7 文件（<code>.gp</code>）不受支持；请先在 Guitar Pro 中打开，并导出为 <code>.gpx</code>。</p>
+<p>内置练习在发布前都经过检查。你自己的文件会按原样读取，因此使用特殊记谱的文件可能出现小节长度错误、与节拍器不同步或无法打开。这是导入功能的限制，而不是你的文件有问题。</p>
+
+<p class="q">为什么有的练习被锁住了？</p>
+<p>在一个级别内，第一行练习始终开放，之后的行会随着你收集星星依次解锁——5 颗、15 颗、30 颗。如果你想直接弹某首曲子，可以打开<strong>设置 → 解锁全部内容</strong>。你的星星和分数都不会受影响。</p>
+
+<p class="q">我的分数是怎么计算的？</p>
+<p>每次评分练习都会评估三点：是否弹对了音、离节拍有多近，以及音保持得如何。达到 60% 得一颗星，75% 得两颗，90% 得三颗。练习模式下的弹奏不会评分，也不会保存。</p>
+
+<p class="q">我的进度丢了吗？</p>
+<p>练习目录仍在不断扩充，更新中可能会新增、修改或移除练习——这时，与这些练习相关的分数可能会丢失。你自己导入的文件不受影响。</p>
+
+<h2>隐私</h2>
+<p>TabRider 不收集任何个人数据，也从不录制或传输音频。请参阅<a href="privacy.html">隐私政策</a>。</p>
+
+<h2>联系方式</h2>
+<p>请发邮件至 <a href="mailto:burger.stephane@gmail.com">burger.stephane@gmail.com</a>。请注明你的设备及其 iOS 或 Android 版本；如果问题出现在某个练习中，也请注明是哪个练习。</p>
+
+</body>
+</html>
