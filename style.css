@@ -79,9 +79,23 @@ header .wrap {
 /* Official store badges. The Google Play PNG has transparent padding built in
    (the badge is about 2/3 of the image height), so it is drawn taller and pulled
    in with negative margins to look the same height as the App Store badge. */
-.stores { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center; }
+.stores { display: flex; flex-wrap: wrap; gap: 1.75rem 1rem; justify-content: center; align-items: center; }
 .stores .appstore { height: 50px; width: auto; }
 .stores .googleplay { height: 75px; width: auto; margin: -12.5px -10px; }
+/* Until the Play release the badge has no link and a small label underneath. */
+.soon { position: relative; }
+.soon span {
+  position: absolute;
+  left: 50%;
+  bottom: -1.4rem;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
 
 /* Screenshots: the iPhone is landscape-only during a session, so every capture is wide */
 .shot { border-radius: 18px; border: 1px solid var(--line); box-shadow: 0 20px 60px rgba(0, 0, 0, .5); }
