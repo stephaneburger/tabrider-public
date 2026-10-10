@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabRider — Learn guitar by playing</title>
+<meta name="description" content="TabRider listens as you play your guitar, follows the score note by note, and unlocks new music as you improve. Free on iPhone, iPad and Android.">
+<link rel="canonical" href="https://tabrider.app/">
+<link rel="alternate" hreflang="en" href="https://tabrider.app/">
+<link rel="alternate" hreflang="fr" href="https://tabrider.app/fr/">
+<link rel="alternate" hreflang="es" href="https://tabrider.app/es/">
+<link rel="alternate" hreflang="de" href="https://tabrider.app/de/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tabrider.app/zh-Hans/">
+<link rel="alternate" hreflang="x-default" href="https://tabrider.app/">
+<meta property="og:title" content="TabRider — Learn guitar by playing">
+<meta property="og:description" content="Play along. TabRider listens, follows the score note by note, and unlocks new music as you improve.">
+<meta property="og:image" content="https://tabrider.app/img/og.jpg">
+<meta property="og:url" content="https://tabrider.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<script>
+// Root page only: open the site in the browser's language (English if it is not
+// one of ours). A language picked from the menu is remembered and always wins.
+(function () {
+  var lang = null;
+  try { lang = localStorage.getItem("lang"); } catch (e) {}
+  var prefs = navigator.languages || [navigator.language || "en"];
+  for (var i = 0; !lang && i < prefs.length; i++) {
+    var code = prefs[i].toLowerCase();
+    if (code.indexOf("zh") === 0) lang = "zh-Hans";
+    else if (/^(en|fr|es|de)\b/.test(code)) lang = code.slice(0, 2);
+  }
+  if (lang && lang !== "en") location.replace(lang + "/");
+})();
+</script>
+</head>
+<body>
+
+<header><div class="wrap">
+  <a class="brand" href="./"><img src="img/favicon-64.png" alt="">TabRider</a>
+  <details class="langs">
+    <summary aria-label="Language"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.7 3.9 5.8 3.9 9.5s-1.3 6.8-3.9 9.5c-2.6-2.7-3.9-5.8-3.9-9.5s1.3-6.8 3.9-9.5z"/></svg>English</summary>
+    <nav><strong>English</strong><a href="fr/" hreflang="fr">Français</a><a href="es/" hreflang="es">Español</a><a href="de/" hreflang="de">Deutsch</a><a href="zh-Hans/" hreflang="zh-Hans">简体中文</a></nav>
+  </details>
+</div></header>
+
+<main>
+
+<div class="hero"><div class="wrap">
+  <img class="icon" src="img/icon-512.png" alt="TabRider app icon">
+  <h1>Play along.<br>TabRider listens.</h1>
+  <p class="lead">Pick up your guitar and play. TabRider hears every note through your phone or tablet,
+    follows the score with you, and unlocks new music as you improve.</p>
+  <div class="stores">
+    <a href="https://apps.apple.com/app/id6775223307"><img class="appstore" src="img/badges/app-store-en.svg" alt="Download on the App Store"></a>
+    <!-- At the Play release, replace this span with:
+         <a href="https://play.google.com/store/apps/details?id=com.stephaneburger.tabrider">…the img…</a> -->
+    <span class="soon"><img class="googleplay" src="img/badges/google-play-en.png" alt="Get it on Google Play"><span>Coming soon</span></span>
+  </div>
+  <img class="shot" src="img/en/session_tab.jpg" width="1400" height="693"
+       alt="Ode to Joy in tablature: the notes already played are green">
+</div></div>
+
+<section><div class="wrap">
+  <h2>How it works</h2>
+
+  <div class="step">
+    <img class="shot" src="img/en/learn.jpg" width="1400" height="693" loading="lazy"
+         alt="The list of quests and the pieces of the first level">
+    <div>
+      <p class="num">STEP 1</p>
+      <h3>Pick a piece</h3>
+      <p>361 exercises in three quests: timeless melodies like Für Elise, Greensleeves and Danny Boy,
+        the classical studies of Fernando Sor, and a step-by-step curriculum of scales, chords,
+        arpeggios, fingerpicking, rhythm and lead.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img class="shot" src="img/en/session_tab.jpg" width="1400" height="693" loading="lazy"
+         alt="A piece being played: each note turns green when it is heard">
+    <div>
+      <p class="num">STEP 2</p>
+      <h3>Play into the microphone</h3>
+      <p>No cable, no setup. Play your acoustic or classical guitar near your phone or tablet. The score
+        scrolls with you, and each note turns green the moment TabRider hears it.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <img class="shot" src="img/en/level.jpg" width="1400" height="693" loading="lazy"
+         alt="Scores and stars for each piece of a level">
+    <div>
+      <p class="num">STEP 3</p>
+      <h3>Earn stars, unlock more</h3>
+      <p>Every run is scored on the right note, the timing and how well you hold it. Stars unlock the
+        next row of pieces, so there is always something new to play.</p>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Everything you need to practise</h2>
+
+  <div class="cards">
+    <div class="card">
+      <img src="img/en/session_notation.jpg" width="1400" height="693" loading="lazy" alt="A piece in standard notation">
+      <div><h3>Tab or standard notation</h3><p>Read tablature or sheet music, and switch at any time.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/en/practice.jpg" width="1400" height="693" loading="lazy" alt="The tempo menu, from 100 % down to 25 %">
+      <div><h3>Slow it down</h3><p>Practice runs are never scored. Drop the tempo to 25 %, or let note by note wait for you on every note.</p></div>
+    </div>
+    <div class="card">
+      <img src="img/en/tuner.jpg" width="1400" height="693" loading="lazy" alt="The tuner showing the A string in tune">
+      <div><h3>A built-in tuner</h3><p>Tune each string in seconds before you play.</p></div>
+    </div>
+  </div>
+
+  <ul class="more">
+    <li><strong>Your own music.</strong> Import Guitar Pro 6 files (.gpx) into My Library.</li>
+    <li><strong>Metronome.</strong> A count-in and a steady click keep you on the beat.</li>
+    <li><strong>Private.</strong> Sound is analysed on your device, never recorded or sent anywhere.</li>
+    <li><strong>Free.</strong> No account, no ads, no in-app purchases, and it works offline.</li>
+  </ul>
+</div></section>
+
+<section class="cta"><div class="wrap">
+  <h2>Your guitar. Your pace.</h2>
+  <p>For iPhone and iPad (iOS 17 or later) and Android (8.0 or later).</p>
+  <div class="stores">
+    <a href="https://apps.apple.com/app/id6775223307"><img class="appstore" src="img/badges/app-store-en.svg" alt="Download on the App Store"></a>
+    <!-- At the Play release, replace this span with:
+         <a href="https://play.google.com/store/apps/details?id=com.stephaneburger.tabrider">…the img…</a> -->
+    <span class="soon"><img class="googleplay" src="img/badges/google-play-en.png" alt="Get it on Google Play"><span>Coming soon</span></span>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:burger.stephane@gmail.com">Contact</a></nav>
+  <span>© 2026 Stéphane Burger</span>
+</div></footer>
+
+<script>
+// Remember a language picked from the menu, so the root page never overrides it.
+document.querySelectorAll(".langs a").forEach(function (a) {
+  a.addEventListener("click", function () {
+    try { localStorage.setItem("lang", a.hreflang); } catch (e) {}
+  });
+});
+// Close the language menu when clicking anywhere else.
+document.addEventListener("click", function (event) {
+  var menu = document.querySelector(".langs");
+  if (!menu.contains(event.target)) menu.open = false;
+});
+</script>
+
+</body>
+</html>
